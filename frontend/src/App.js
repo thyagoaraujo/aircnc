@@ -14,7 +14,9 @@ function App() {
       email
     });
 
-    console.log(response);
+    const { _id } = response.data;
+
+    localStorage.setItem('user', _id);
   }
 
   return (
