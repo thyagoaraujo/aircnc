@@ -26,7 +26,9 @@ export default function List() {
     <SafeAreaView style={styles.container}>
       <Image style={styles.logo} source={logo} />
 
-      <SpotList />
+      {techs.map(tech => (
+        <SpotList key={tech} tech={tech} />
+      ))}
     </SafeAreaView>
   );
 }
