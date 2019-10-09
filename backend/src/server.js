@@ -11,6 +11,12 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
+io.on('connection', socket => {
+  console.log('Usuário conectado', socket.id);
+
+  socket.emit('hello', 'World');
+});
+
 mongoose.connect(
   'mongodb+srv://omnistack:omnistack@cluster0-d8xpb.mongodb.net/aircnc?retryWrites=true&w=majority',
   {
