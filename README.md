@@ -6,6 +6,9 @@ AirCnc is a platform that publishes spots of registered companies. Developers su
 
 ![Demo](demo.png)
 
+![Demo](demo2.gif)
+
+
 ## :rocket: Technologies
 
 This project was developed with the following technologies:
